@@ -16,9 +16,9 @@ namespace Logic
         /// <returns></returns>
         public double Price(Option option)
         {
-            // TODO : Implement
-            throw new NotImplementedException();
+            double power = - option.RiskFreeInterestRates * option.Term;
+            // TODO add end of formula
+            return option.StrikePrice * Math.Pow(Math.E, power);
         }
-
     }
-}
+} 
