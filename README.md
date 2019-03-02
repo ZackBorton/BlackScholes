@@ -19,5 +19,13 @@ You can run using the dotnet command below or simply run testsin your ide of cho
 dotnet test project.csproj
 ```
 
+## Formula
+##### Call Option
+
+![Alt text](./Images/Call.png?raw=true "Optional Title")
+
+##### Put Option
+![Alt text](./Images/Put.png?raw=true "Optional Title")
+
 ## To DO 
 Add Greeks, add Put Option pricing
