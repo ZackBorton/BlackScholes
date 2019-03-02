@@ -23,7 +23,6 @@ namespace Logic
             double power = - option.RiskFreeInterestRates * option.Term;
             return option.CurrentUnderlyingPrice * d1 - option.StrikePrice *
                    Math.Pow(Math.E, power) * d2;
-            //* ;
         }
 
         /// <summary>
@@ -40,7 +39,8 @@ namespace Logic
         }
         
         /// <summary>
-        ///     
+        ///     The cumulative distribution function for standard normal distribution
+        ///     The probability that a random variable is less then or equal to x
         /// </summary>
         /// <param name="option"></param>
         /// <returns></returns>

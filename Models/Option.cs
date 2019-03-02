@@ -8,6 +8,9 @@ namespace Models
     /// </summary>
     public class Option
     {
+        /// <summary>
+        ///     The different types of calls
+        /// </summary>
         public OptionType OptionType { get; set; }
         
         /// <summary>
@@ -17,13 +20,13 @@ namespace Models
         public double CurrentUnderlyingPrice { get; set; }
         
         /// <summary>
-        ///     
+        ///     The price that the option purchaser can choose to exersice an option on an underlying asset 
         /// </summary>
         [Required(ErrorMessage="The strike price is required.")]
         public double StrikePrice { get; set; }
         
         /// <summary>
-        ///     
+        ///     The term represented in days
         /// </summary>
         [Required(ErrorMessage="The term in days is required")]
         public double Term { get; set; }
@@ -36,7 +39,7 @@ namespace Models
         public double ImpliedVolatility { get; set; }
         
         /// <summary>
-        /// 
+        ///     The rate of return for a hypothetical investment that would have no risk of return
         /// </summary>
         [Required]
         public double RiskFreeInterestRates { get; set; }
